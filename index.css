@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500&display=swap');
+body {
+    background-color: #ead9fa;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.bgimage {
+    width: 800px;
+    z-index: -1;
+}
+
+button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #79578e;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+:active button:focus {
+    background-color: #44215a;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+
+.bg-text {
+    width: 500px;
+}
+
+.blur-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    top: 0;
+    text-transform: uppercase;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(2px);
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+
+.blur-content h1 {
+    margin-bottom: 25%;
+}
+
+h1 {
+    font-family: 'Roboto Slab', serif;
+    color: black;
+    text-align: center;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px #FFFFFF;
+}
+
+canvas {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+#bot {
+    width: 100vw;
+}
